@@ -15,11 +15,8 @@ export const store = new Vuex.Store({
       return (state.count = state.count - payload.amount);
     },
     addSkill(state, payload) {
-      console.log(payload);
       let feed = { skill: payload.skill, percent: payload.percent };
       state.skills.push(feed);
-
-      console.log(state.skills);
       /*state.percent = payload.percent;*/
       return;
     },

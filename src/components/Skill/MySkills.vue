@@ -39,14 +39,14 @@ import Skill from "./Skill";
 import axios from "axios";
 
 import AddSkill from "./AddSkill.vue";
-import RemoveSkill from "./RemoveSkill.vue";
+/*import RemoveSkill from "./RemoveSkill.vue";*/
 
 export default {
   name: "MySkills",
   components: {
     Skill,
     AddSkill,
-    RemoveSkill,
+    /*RemoveSkill,*/
   },
   computed: mapState({
     skills: (state) => state.skills,
@@ -57,9 +57,9 @@ export default {
     };
   },*/
   created() {
-    axios.get("http://localhost:3000/getSkills").then((response) => {
-      /*this.skills = response.data.skills;*/
-    });
+    /*axios.get("http://localhost:3000/getSkills").then((response) => {
+      this.skills = response.data.skills;
+    });*/
   },
 };
 </script>
